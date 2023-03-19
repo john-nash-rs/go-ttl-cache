@@ -98,7 +98,7 @@ func stopCleaning(cache *Cache) {
 func (cache *cache) purge() {
 	now := time.Now().UnixNano()
 	for key, data := range cache.kvstore {
-		if data.ExpireAt > now {
+		if data.ExpireAt < now {
 			delete(cache.kvstore, key)
 		}
 	}
