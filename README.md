@@ -1,3 +1,4 @@
+A very detailed post can be found at https://nulpointerexception.com/2023/03/19/design-a-ttl-based-in-memory-cache-in-golang/
 # Initialisation
 ## Options
 1. **defaultExpiryDuration** - If the key value pair is stored without ttl. This defaultExpirationTime becomes the default ttl. If the value of defaultExpiryDuration is specified as 0, it is treated as infinity.
